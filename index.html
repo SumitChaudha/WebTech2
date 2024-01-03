@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WeatherStyle.css">
+    <title>Wheather Index</title>
+</head>
+<body>
+    <div class="mdiv">
+        <div class="weather_app">
+          <h2 align="center">WEATHER FORECAST</h2>
+          <div class="ip">
+              <input type="text" id="userText">
+              <button onclick="getWeatherData()"><img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png" alt="search" class="search"></button>
+          </div>
+          <div class="info" align="center">
+               <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" alt="sunny_img" class="weather_img">
+               <h1 id="temp">0°C</h1>
+               <h2 id="city">CITY NAME</h2>
+          </div>
+          <div class="info2" >
+            <div class="humidity">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/011/652/634/small/humidity-3d-render-icon-illustration-png.png" alt="humid_img" class="humi">
+                <h3>HUMIDITY</h3>
+                <h4 id="humidity_info">0 %</h4>
+            </div>
+            <div class="wind">
+                <img src="https://icon-library.com/images/wind-icon-png/wind-icon-png-8.jpg" alt="wind_img" class="humi">
+                <h3>WIND</h3>
+                <h4 id="wind_info">0 km/hr</h4>
+            </div>
+          </div>
+         </div>
+    </div>
+    <script src="WeatherScript.js"></script>
+</body>
+</html>
